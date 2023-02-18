@@ -1,0 +1,214 @@
+/* Global */
+body{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+.keyfacts,.aboutus .contenu{
+  width: 1000px;
+  margin: 0 auto 50px;
+}
+/* Headers */
+header, .tipsandtricks,.aboutus{
+  background: url('http://cepegra-labs.be/webdesign/fed2022/laurent/css/exos/11-responsible-drinking/img/header.jpg') center/cover;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 50px;
+}
+/* Header tips and tricks */
+.tipsandtricks{
+  background: url('http://cepegra-labs.be/webdesign/fed2022/laurent/css/exos/11-responsible-drinking/img/train.jpg') center/cover;
+}
+/* header about us */
+.aboutus {
+  background: url('http://cepegra-labs.be/webdesign/fed2022/laurent/css/exos/11-responsible-drinking/img/barel.jpg')center/cover;
+}
+/* Contenu header */
+.contenu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header > a {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%,0);
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+}
+/* Rajout filtres noirs sur les headers */
+header::before,.tipsandtricks::before,.aboutus::before {
+  content:'';
+  position: absolute;
+  height: 100%;
+  background-color: rgba(10, 9, 9, 0.349);
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+/* Mise en forme contenu headers */
+.contenu{
+  color: white;
+}
+.contenu > h1{
+  font-size: 70px;
+}
+.contenu > p{
+  line-height: 30px;
+  font-size: 16px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.contenu > a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: .3s all ease-in-out;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.contenu > a:hover, .keyfacts div a:hover {
+  background: white;
+  color: black;
+  transition: .3s all ease-in-out;
+}
+/* Burger menu */
+.burger-menu {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  margin: 15px 20px;
+  background: #303030;
+  cursor: pointer;
+  z-index: 15;
+}
+.burger-menu div {
+  height: 2px;
+  width:70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+}
+.burger-menu .barre-top {
+  top: 30%;
+}
+.burger-menu .barre-bottom {
+  top: 70%;
+}
+/* Section Key facts */
+.keyfacts div{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 300px;
+  height: 450px;
+}
+.keyfacts img {
+  width: 100%;
+}
+.keyfacts div:nth-of-type(2) {
+  margin: 0 50px;
+}
+/* button read more */
+.keyfacts div a{
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 13px 26px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.keyfacts div a:hover { /************************/
+  background: black;
+  color: white;
+  transition: .3s all ease-in-out;
+}
+h2 {
+  font-size: 50px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.keyfacts h3{
+  font-weight: bold;
+  font-size: 18px;
+
+}
+.keyfacts p{
+  line-height: 30px;
+}
+/* Section tips and tricks */
+.tipsandtricks{
+  position: relative;
+}
+/* Section country informations */
+.countryinfo{
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto 50px;
+}
+.countryinfo img{
+  float: left;
+  width: 50%;
+}
+.countryinfo ul{
+  column-count: 2;
+  text-align: left;
+  margin-top: 50px;
+}
+.countryinfo ul li:not(:first-child){
+  margin: 5px 0px;
+}
+.countryinfo ul li a{
+  text-decoration: none;
+  color: #56B2BF;
+  font-size: 16px;
+}
+.countryinfo p{
+  width: 70%;
+  margin: 60px auto;
+  color: #303030;
+  font-size: 16px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+/* Footer */
+footer nav a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+footer nav a:nth-of-type(2){
+  margin: 0 50px;
+}
+footer p{
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 30px 0px;
+}
+small a{
+  color: black;
+}
+
+
