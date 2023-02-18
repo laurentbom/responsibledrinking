@@ -9,18 +9,18 @@ body{
 }
 /* Headers */
 header, .tipsandtricks,.aboutus{
-  background: url(img/header.jpg) center/cover;
+  background: url(../img/header.jpg) center/cover;
   height: 100vh;
   position: relative;
   margin-bottom: 50px;
 }
 /* Header tips and tricks */
 .tipsandtricks{
-  background: url(img/train.jpg) center/cover;
+  background: url(../img/train.jpg) center/cover;
 }
 /* header about us */
 .aboutus {
-  background: url(img/barel.jpg)center/cover;
+  background: url(../img/barel.jpg)center/cover;
 }
 /* Contenu header */
 .contenu{
